@@ -1,0 +1,493 @@
+/* img{
+    width: 100%;
+  }
+   */
+
+
+  body {
+    overflow: hidden;
+    border-style: none;
+  }
+
+
+  
+  .bg_full img {
+    position: relative;
+    width: 100%;  /* 부모 요소 너비에 맞게 이미지 크기 조정 */
+    height: 100%; /* 부모 요소 높이에 맞게 이미지 크기 조정 */
+
+  }
+  
+
+  
+
+  @keyframes dongdong {
+    from{
+        transform:translateY(0)
+    }
+    to{
+        transform:translateY(-30px)
+    }
+}
+
+
+  .ps_product{
+    position: absolute;
+    left: 50%;
+    top: 3.4%;
+    translate: -50% 0%;
+    width: 80vw;
+    animation: dongdong 1.8s infinite alternate;
+  
+    img{
+      width: 100%;  /* 부모 요소 너비에 맞게 이미지 크기 조정 */
+      height: auto; /* 부모 요소 높이에 맞게 이미지 크기 조정 */
+    }
+  }
+
+
+
+  .section01{
+    position: relative;
+  }
+
+  .section01_awesome{
+    position: absolute;
+    top: 3vw;
+    left: 50%;
+    translate: -50% 0;
+  
+    img{
+      width: 58vw;
+    }
+  }
+
+
+  .section01_start{
+    position: absolute;
+    top: 29.3vw;
+    left: 9.3vw;
+  
+    img{
+      width: 19vw;
+    }
+  }
+
+  
+  .section01_folder01{
+    position: absolute;
+    top: 39.8vw;
+    right: 5.6vw;
+  
+    img{
+      width: 25.5vw;
+    }
+  }
+
+
+  .section01_folder02{
+    position: absolute;
+    top: 70.3vw;
+    left: 8.4vw;
+  
+    img{
+      width: 26.5vw;
+    }
+  }
+
+
+  .section01_bubble01{
+    position: absolute;
+    top: 42.6vw;
+    right: 26.2vw;
+  
+    img{
+      width: 8.8vw;
+    }
+  }
+
+
+  .section01_bubble02{
+    position: absolute;
+    top: 64.2vw;
+    left: 11.2vw;
+  
+    img{
+      width: 11.5vw;
+    }
+  }
+
+
+  .section01_bubble03{
+    position: absolute;
+    top: 76.7vw;
+    right: 11.9vw;
+  
+    img{
+      width: 10vw;
+    }
+  }
+
+
+  .section02{
+    position: relative;
+  }
+
+
+.section03{
+  position: relative;
+}
+
+.section03_text{
+  position: absolute;
+  top: 16.5vw;
+  left: 17.5vw;
+    
+  img{
+    width: 31.5vw;
+  }
+}
+
+
+.section04{
+  position: relative;
+}
+
+.section04_bubble01{
+  position: absolute;
+  top: 35vw;
+  left: 6.2vw;
+    
+  img{
+    width: 8.8vw;
+  }
+}
+
+.section04_bubble02{
+  position: absolute;
+  top: 35vw;
+  right: 5.6vw;
+    
+  img{
+    width: 8.8vw;
+  }
+}
+
+
+
+.graph_left{
+  position: absolute;
+  top: 51.6vw;
+  left: 19.1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4vw;
+  width: 27.2vw;
+
+  img{
+    width: 22.1vw;
+  }
+}
+
+
+
+.graph_orange01{
+  position: absolute;
+  top: 51.6vw;
+  left: 19.1vw;
+  width: 0;
+  height: 0.9vw;
+  background-color: #ff8c00;
+  border-radius: 20px;
+  transition: width 1s ease;  /* width 애니메이션 */
+}
+
+
+.graph_orange02{
+  position: absolute;
+  top: 54.1vw;
+  left: 19.1vw;
+  width: 0;
+  height: 0.9vw;
+  background-color: #ff8c00;
+  border-radius: 20px;
+  transition: width 1s ease;  /* width 애니메이션 */
+}
+
+
+.graph_orange03{
+  position: absolute;
+  top: 56.6vw;
+  left: 19.1vw;
+  width: 0;
+  height: 0.9vw;
+  background-color: #ff8c00;
+  border-radius: 20px;
+  transition: width 1s ease;  /* width 애니메이션 */
+}
+
+
+
+
+
+
+.graph_right{
+  position: absolute;
+  top: 51.6vw;
+  right: 11.8vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4vw;
+  width: 27.2vw;
+
+  img{
+    width: 22.1vw;
+  }
+}
+
+
+
+
+
+.graph_orange04{
+  position: absolute;
+  top: 51.6vw;
+  left: 61vw;
+  width: 0;
+  height: 0.9vw;
+  background-color: #ff8c00;
+  border-radius: 20px;
+  transition: width 1s ease;  /* width 애니메이션 */
+}
+
+
+.graph_orange05{
+  position: absolute;
+  top: 54.1vw;
+  left: 61vw;
+  width: 0;
+  height: 0.9vw;
+  background-color: #ff8c00;
+  border-radius: 20px;
+  transition: width 1s ease;  /* width 애니메이션 */
+}
+
+
+.graph_orange06{
+  position: absolute;
+  top: 56.6vw;
+  left: 61vw;
+  width: 0;
+  height: 0.9vw;
+  background-color: #ff8c00;
+  border-radius: 20px;
+  transition: width 1s ease;  /* width 애니메이션 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section05{
+  position: relative;
+}
+
+
+.section05_img1{
+  position: absolute;
+  left: 24.8vw;
+  top: 80.3vw;
+  width: 0;
+  height: 10vw;
+  overflow: hidden;
+
+  img{
+    width: 19vw;
+  }
+}
+
+
+.section05_img2{
+  position: absolute;
+  left: 24.8vw;
+  top: 100vw;
+  width: 0;
+  height: 10vw;
+  overflow: hidden;
+
+  img{
+    width: 19vw;
+  }
+}
+
+
+.section05_img3{
+  position: absolute;
+  left: 24.8vw;
+  top: 135vw;
+  width: 0;
+  height: 10vw;
+  overflow: hidden;
+
+  img{
+    width: 19vw;
+  }
+}
+
+
+.section05_img4{
+  position: absolute;
+  left: 24.8vw;
+  bottom: 25.3vw;
+  width: 0;
+  height: 10vw;
+  overflow: hidden;
+
+  img{
+    width: 19vw;
+  }
+}
+
+
+.section06{
+  position: relative;
+}
+
+.section06_window01{
+  position: absolute;
+  top: 62.8vw;
+  right: 70.2vw;
+
+  img{
+    width: 16.1vw;
+  }
+}
+
+.section06_window02{
+  position: absolute;
+  top: 111.3vw;
+  right: 8.7vw;
+
+  img{
+    width: 20.4vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.line_drawing{
+  position: absolute;
+  left: 65%;
+  top: 8.3%;
+  width: 14vw;
+  height: 0;
+  overflow: hidden;
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+.circle_text01{
+  position: absolute;
+  left: 86vw;
+  top: 124vw;
+  translate: -50% 0%;
+  width: 62.6vw;
+  height: 27vw;
+
+  img{
+    width: 16vw;
+    height: auto;
+  }
+}
+
+
+
+
+.section03{
+  position: relative;
+}
+
+.section03_text_container{
+  position: absolute;
+  left: 30.5vw;
+  top: 98vw;
+
+  img{
+    height: 1vw;
+    padding-bottom: 3px;
+  }
+}
+
+.section04{
+  position: relative;
+}
+
+.section04_motion{
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translateX(-50%);
+  height: 0;
+  overflow: hidden;
+
+  img{
+    width: 100vw;
+  }
+}
+
+
+.section06{
+  position: relative;
+}
+
+
+
+
+.section06_text01{
+  position: absolute;
+  top: 7vw;
+  left: -65.7vw;
+
+  img{
+    width: 134vw;
+  }
+}
+
+
+
+.section06_text02{
+  position: absolute;
+  top: 19.1vw;
+  right: -22.8vw;
+
+  img{
+    width: 99vw;
+  }
+}
+
