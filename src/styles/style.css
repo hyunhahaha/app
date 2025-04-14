@@ -40,8 +40,7 @@
     animation: dongdong 1.8s infinite alternate;
   
     img{
-      width: 100%;  /* 부모 요소 너비에 맞게 이미지 크기 조정 */
-      height: auto; /* 부모 요소 높이에 맞게 이미지 크기 조정 */
+      width: 100%;
     }
   }
 
@@ -49,6 +48,7 @@
 
   .section01{
     position: relative;
+    height: 100%;
   }
 
   .section01_awesome{
@@ -56,6 +56,9 @@
     top: 3vw;
     left: 50%;
     translate: -50% 0;
+    opacity: 0;
+    transform: rotate(20deg) translateY(50px);
+  
   
     img{
       width: 58vw;
@@ -131,11 +134,13 @@
 
   .section02{
     position: relative;
+    height: 100%;
   }
 
 
 .section03{
   position: relative;
+  height: 100%;
 }
 
 .section03_text{
@@ -151,6 +156,7 @@
 
 .section04{
   position: relative;
+  height: 100%;
 }
 
 .section04_bubble01{
@@ -287,6 +293,7 @@
 
 .section05{
   position: relative;
+  height: 100%;
 }
 
 .section05_bubble01{
@@ -355,6 +362,7 @@
 
 .section06{
   position: relative;
+  height: 100%;
 }
 
 .section06_bubble01{
@@ -387,10 +395,13 @@
   }
 }
 
-
+.section07{
+  height: 100%;
+}
 
 .section08{
   position: relative;
+  height: 100%;
 }
 
 .section08_search01{
@@ -452,7 +463,7 @@
  
   height: 48.8vw;   
   
-  border-radius: 46px;
+  border-radius: 80px;
   overflow: hidden;
 
   video {
@@ -491,6 +502,7 @@
 
 .section09{
   position: relative;
+  height: 100%;
 }
 
 .section09_number01_1{
@@ -644,3 +656,114 @@ width: 9vw;
 }
 
 
+.section10{
+  position: relative;
+  height: 100%;
+}
+
+.section10_video1 {
+  position: absolute;
+  left: 9.7vw;
+  top: 40.05vw;
+  height: 48.8vw;
+  border-radius: 80px;
+  overflow: hidden;
+  transform: rotate(-14.6deg) scale(0.925);
+
+  video {
+    width: 23vw;
+    height: 53vw;
+    object-fit: cover;
+    display: block;
+    transform: translateY(-2.8%);
+  }
+}
+
+.section10_video2 {
+  position: absolute;
+  right: 16.76vw;
+  bottom: 65.95vw;
+  height: 48.8vw;
+  border-radius: 80px;
+  overflow: hidden;
+  transform: rotate(-14.6deg) scale(0.925);
+
+  video {
+    width: 23vw;
+    height: 53vw;
+    object-fit: cover;
+    display: block;
+    transform: translateY(-2.8%);
+  }
+}
+
+
+.section10_bubble01{
+  position: absolute;
+  top: 37.7vw;
+  left: 18.7vw;
+
+  img{
+    width: 17.5vw;
+  }
+}
+
+.section10_bubble02{
+  position: absolute;
+  top: 95vw;
+  right: 10.9vw;
+
+  img{
+    width: 10vw;
+  }
+}
+
+.section10_bubble03{
+  position: absolute;
+  bottom: 79.2vw;
+  left: 20.5vw;
+
+  img{
+    width: 10.6vw;
+  }
+}
+
+.section10_bubble04{
+  position: absolute;
+  bottom: 24vw;
+  right: 18.2vw;
+
+  img{
+    width: 10.9vw;
+  }
+}
+
+
+.section11{
+  height: 100%;
+}
+
+
+.section12{
+  height: 100%;
+}
+
+
+.section13{
+  height: 100%;
+}
+
+
+.section14{
+  height: 100%;
+}
+
+
+.section15{
+  height: 100%;
+}
+
+
+.section16{
+  height: 100%;
+}
