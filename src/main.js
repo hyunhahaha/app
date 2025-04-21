@@ -443,7 +443,7 @@ ScrollTrigger.create({
   trigger: ".section09",
   start: "1100px center",
   end: "1500px center",
-  markers:true,
+  // markers:true,
   animation: gsap.from(".ani_3", { y: 30, opacity: 0, stagger: 0.1 }),
   // pinSpacing:false,
   // pin: true,
@@ -510,6 +510,122 @@ ScrollTrigger.create({
 
 
 
+
+//section11_graph
+const section11_graph = gsap.timeline();
+
+section11_graph.from(".section11_graph", { stagger: 0.1, y: 30, opacity: 0 });
+
+ScrollTrigger.create({
+  trigger: ".section11",
+  start: "center center", // 스크롤 시작 위치
+  end: "1600px center", // 끝 위치
+  // markers:true,
+  animation: section11_graph,
+  scrub: 4,
+});
+
+
+
+const section12_star5 = gsap.timeline({ 
+  repeat: -1, 
+  yoyo: true, 
+  repeatDelay: 0.2 // 깜빡임 사이 간격
+});
+
+// 모든 요소가 동시에 깜빡이도록 설정
+section12_star5.fromTo(".section12_star5", 
+  { opacity: 0 },
+  { opacity: 1, duration: 0.3 }
+).to(".section12_star5", 
+  { opacity: 0, duration: 0.3 }
+);
+
+ScrollTrigger.create({
+  trigger: ".section12",
+  start: "top top",
+  end: "bottom center",
+  animation: section12_star5,
+  scrub: false
+});
+
+
+
+
+
+//section13_bubble01
+const section13_bubble01 = gsap.timeline();
+
+section13_bubble01.from(".section13_bubble01", { stagger: 0.1, x: -40, opacity: 0 });
+
+ScrollTrigger.create({
+  trigger: ".section13",
+  start: "-200px top", // 스크롤 시작 위치
+  end: "400px top", // 끝 위치
+  // markers:true,
+  animation: section13_bubble01,
+  scrub: 8,
+});
+
+
+//section13_bubble02
+const section13_bubble02 = gsap.timeline();
+
+section13_bubble02.from(".section13_bubble02", { stagger: 0.1, x: 40, opacity: 0 });
+
+ScrollTrigger.create({
+  trigger: ".section13",
+  start: "-200px top", // 스크롤 시작 위치
+  end: "400px top", // 끝 위치
+  // markers:true,
+  animation: section13_bubble02,
+  scrub: 8,
+});
+
+
+//section13_bubble03
+const section13_bubble03 = gsap.timeline();
+
+section13_bubble03.from(".section13_bubble03", { stagger: 0.1, x: 40, opacity: 0 });
+
+ScrollTrigger.create({
+  trigger: ".section13",
+  start: "-200px top", // 스크롤 시작 위치
+  end: "400px top", // 끝 위치
+  // markers:true,
+  animation: section13_bubble03,
+  scrub: 8,
+});
+
+
+//section13_bubble04
+const section13_bubble04 = gsap.timeline();
+
+section13_bubble04.from(".section13_bubble04", { stagger: 0.1, x: -40, opacity: 0 });
+
+ScrollTrigger.create({
+  trigger: ".section13",
+  start: "-200px top", // 스크롤 시작 위치
+  end: "400px top", // 끝 위치
+  // markers:true,
+  animation: section13_bubble04,
+  scrub: 8,
+});
+
+
+//section13_text
+const section13_text = gsap.timeline();
+
+section13_text.from(".section13_text", { stagger: 0.1, x: 40, opacity: 0 });
+
+ScrollTrigger.create({
+  trigger: ".section13",
+  start: "1000px top", // 스크롤 시작 위치
+  end: "1200px top", // 끝 위치
+  markers:true,
+  animation: section13_text,
+  scrub: 8,
+});
 
 
 

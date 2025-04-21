@@ -4,6 +4,11 @@
    */
 
 
+   img {
+    display: block;
+  }
+
+
   body {
     overflow: hidden;
     border-style: none;
@@ -211,7 +216,7 @@
 
 .graph_orange02{
   position: absolute;
-  top: 54.1vw;
+  top: 54vw;
   left: 19.1vw;
   width: 0;
   height: 0.9vw;
@@ -223,7 +228,7 @@
 
 .graph_orange03{
   position: absolute;
-  top: 56.6vw;
+  top: 56.4vw;
   left: 19.1vw;
   width: 0;
   height: 0.9vw;
@@ -269,7 +274,7 @@
 
 .graph_orange05{
   position: absolute;
-  top: 54.1vw;
+  top: 54vw;
   left: 61vw;
   width: 0;
   height: 0.9vw;
@@ -281,7 +286,7 @@
 
 .graph_orange06{
   position: absolute;
-  top: 56.6vw;
+  top: 56.4vw;
   left: 61vw;
   width: 0;
   height: 0.9vw;
@@ -463,7 +468,7 @@
  
   height: 48.8vw;   
   
-  border-radius: 80px;
+  border-radius: 3.2vw;
   overflow: hidden;
 
   video {
@@ -666,7 +671,7 @@ width: 9vw;
   left: 9.7vw;
   top: 40.05vw;
   height: 48.8vw;
-  border-radius: 80px;
+  border-radius: 3.5vw;
   overflow: hidden;
   transform: rotate(-14.6deg) scale(0.925);
 
@@ -684,7 +689,7 @@ width: 9vw;
   right: 16.76vw;
   bottom: 65.95vw;
   height: 48.8vw;
-  border-radius: 80px;
+  border-radius: 3.5vw;
   overflow: hidden;
   transform: rotate(-14.6deg) scale(0.925);
 
@@ -740,19 +745,134 @@ width: 9vw;
 
 
 .section11{
+  position: relative;
   height: 100%;
+}
+
+.section11_graph{
+  position: absolute;
+  bottom: 9.1vw;
+  left: 10.8vw;
+
+  img{
+    width: 30.6vw;
+  }
+}
+
+.section11_video {
+  position: absolute;
+  left: 13.5vw;
+  top: 43.5vw;
+  
+  height: 53.5vw;
+  
+  border-radius: 3.5vw;
+  overflow: hidden;
+
+  video {
+    width: 25vw;
+    height: 58vw;
+    object-fit: cover;
+    display: block;
+    transform: translateY(-2.8%); /* ← 이걸로 위로 5% 이동 */
+  }
 }
 
 
 .section12{
+  position: relative;
   height: 100%;
+}
+
+.section12_video {
+  position: absolute;
+  left: 43.5vw;
+  top: 36.65vw;
+
+  height: 50.6vw;
+
+  border-radius: 3.3vw;
+  overflow: hidden;
+
+  video {
+    width: 23.6vw;
+    height: 53.8vw;
+    object-fit: cover;
+    display: block;
+    transform: translateY(-2.8%); /* ← 이걸로 위로 5% 이동 */
+  }
+}
+
+
+.section12_star5{
+  position: absolute;
+  bottom: 23.8vw;
+  left: 17.2vw;
+
+  img{
+    width: 22.4vw;
+  }
 }
 
 
 .section13{
+  position: relative;
   height: 100%;
 }
 
+.section13_bubble01{
+  position: absolute;
+  top: 23.3vw;
+  left: 18.2vw;
+
+  img{
+    width: 23vw;
+  }
+}
+
+
+.section13_bubble02{
+  position: absolute;
+  top: 33.1vw;
+  right: 9.8vw;
+
+  img{
+    width: 23vw;
+  }
+}
+
+
+.section13_bubble03{
+  position: absolute;
+  top: 41.5vw;
+  right: 9.8vw;
+
+  img{
+    width: 23vw;
+  }
+}
+
+
+.section13_bubble04{
+  position: absolute;
+  top: 61.5vw;
+  left: 10.8vw;
+
+  img{
+    width: 23vw;
+  }
+}
+
+
+.section13_text{
+  position: absolute;
+  bottom: 7.6vw;
+  right: 12.8vw;
+
+  img{
+    width: 24vw;
+  }
+}
 
 .section14{
   height: 100%;
