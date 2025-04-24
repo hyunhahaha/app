@@ -459,11 +459,11 @@ left_01.from(".left1", { x: -50, opacity: 0 });
 
 ScrollTrigger.create({
   trigger: ".section10",
-  start: "top top", // 스크롤 시작 위치
+  start: "top center", // 스크롤 시작 위치
   end: "1000px center", // 끝 위치
   // markers:true,
   animation: left_01,
-  scrub: true,
+  scrub: 3,
 });
 
 
@@ -473,11 +473,11 @@ right_01.from(".right1", { x: 50, opacity: 0 });
 
 ScrollTrigger.create({
   trigger: ".section10",
-  start: "800px top", // 스크롤 시작 위치
+  start: "1000px center", // 스크롤 시작 위치
   end: "1800px center", // 끝 위치
   // markers:true,
   animation: right_01,
-  scrub: true,
+  scrub: 3,
 });
 
 
@@ -487,11 +487,11 @@ left_02.from(".left2", { x: -50, opacity: 0 });
 
 ScrollTrigger.create({
   trigger: ".section10",
-  start: "1400px top", // 스크롤 시작 위치
+  start: "1800px center", // 스크롤 시작 위치
   end: "2400px center", // 끝 위치
   // markers:true,
   animation: left_02,
-  scrub: true,
+  scrub: 3,
 });
 
 
@@ -501,11 +501,11 @@ right_02.from(".right2", { x: 50, opacity: 0 });
 
 ScrollTrigger.create({
   trigger: ".section10",
-  start: "2200px top", // 스크롤 시작 위치
-  end: "3200px center", // 끝 위치
+  start: "2600px center", // 스크롤 시작 위치
+  end: "2800px center", // 끝 위치
   // markers:true,
   animation: right_02,
-  scrub: true,
+  scrub: 3,
 });
 
 
@@ -518,8 +518,8 @@ section11_graph.from(".section11_graph", { stagger: 0.1, y: 30, opacity: 0 });
 
 ScrollTrigger.create({
   trigger: ".section11",
-  start: "center center", // 스크롤 시작 위치
-  end: "1600px center", // 끝 위치
+  start: "1600px center", // 스크롤 시작 위치
+  end: "2400px center", // 끝 위치
   // markers:true,
   animation: section11_graph,
   scrub: 4,
@@ -622,12 +622,76 @@ ScrollTrigger.create({
   trigger: ".section13",
   start: "1000px top", // 스크롤 시작 위치
   end: "1200px top", // 끝 위치
-  markers:true,
+  // markers:true,
   animation: section13_text,
   scrub: 8,
 });
 
 
+
+// section14_round 타임라인 생성
+const section14_round = gsap.timeline();
+
+// 회전 + x축 이동 + 투명도 조절
+section14_round.from(".section14_round", {
+  x: 40,
+  opacity: 0,
+  rotate: 45,  // 회전 추가
+  stagger: 0.1,
+  ease: "power2.out"
+});
+
+// ScrollTrigger 설정
+ScrollTrigger.create({
+  trigger: ".section14",
+  start: "500px top",
+  end: "700px top",
+  animation: section14_round,
+  scrub: 3, // 스크롤에 따라 애니메이션 진행
+  // markers: true
+});
+
+
+const section15_text = gsap.timeline();
+
+section15_text.from(".section15_text", { stagger: 0.1, y: 30, opacity: 0 });
+
+ScrollTrigger.create({
+  trigger: ".section15",
+  start: "top center", // 스크롤 시작 위치
+  end: "100px center", // 끝 위치
+  // markers:true,
+  animation: section15_text,
+  scrub: 1,
+});
+
+
+// 이미지 오른쪽에서 밀어서 나오는 구동
+ScrollTrigger.create({
+  trigger: ".section15",
+  start: "900px top",
+  end: "1300px center",
+  // markers:true,
+  animation: gsap.to(".section15_number12", {
+    clipPath: "inset(0 0 0 0)", // 오른쪽에서부터 100%가 0%로 변하면서 나타나도록 설정
+    ease: "none", // 애니메이션 가속도
+  }),
+  scrub: true,
+});
+
+
+// 이미지 오른쪽에서 밀어서 나오는 구동
+ScrollTrigger.create({
+  trigger: ".section15",
+  start: "1700px top",
+  end: "2100px center",
+  // markers:true,
+  animation: gsap.to(".section15_number345", {
+    clipPath: "inset(0 0 0 0)", // 오른쪽에서부터 100%가 0%로 변하면서 나타나도록 설정
+    ease: "none", // 애니메이션 가속도
+  }),
+  scrub: true,
+});
 
 
 

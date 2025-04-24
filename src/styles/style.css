@@ -875,13 +875,67 @@ width: 9vw;
 }
 
 .section14{
+  position: relative;
   height: 100%;
 }
 
+
+.section14_round{
+  position: absolute;
+  bottom: 10.6vw;
+  left: -13.5vw;
+
+  img{
+    width: 36.2vw;
+  }
+}
 
 .section15{
+  position: relative;
   height: 100%;
 }
+
+.section15_text{
+position: absolute;
+
+left: 50%;
+top: 16.2vw;
+translate: -50% 0%;
+
+  img{
+    width: 25.2vw;
+  }
+}
+
+.section15_number12{
+  position: absolute;
+  bottom: 52.6vw;
+  right: -0.2vw;
+  clip-path: inset(
+    0 100% 0 0
+  ); /* 왼쪽을 100% 숨기고, 오른쪽에서부터 애니메이션을 적용 */
+  transition: clip-path 1s ease; /* clip-path 애니메이션 */
+
+  img{
+    width: 25vw;
+  }
+}
+
+.section15_number345{
+  position: absolute;
+  bottom: 13.6vw;
+  left: 0.1vw;
+  clip-path: inset(
+    0 0 0 100%
+  ); /* 오른쪽을 100% 숨기고, 왼쪽에서부터 애니메이션을 적용 */
+  transition: clip-path 1s ease; /* clip-path 애니메이션 */
+
+  img{
+    width: 29vw;
+  }
+}
+
+
 
 
 .section16{
