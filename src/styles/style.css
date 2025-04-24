@@ -20,7 +20,37 @@
     position: relative;
     width: 100%;  /* 부모 요소 너비에 맞게 이미지 크기 조정 */
     height: 100%; /* 부모 요소 높이에 맞게 이미지 크기 조정 */
-
+  }
+  
+  
+  .bg_full_1 img {
+    position: relative;
+    width: 100%;  /* 부모 요소 너비에 맞게 이미지 크기 조정 */
+    height: 100%; /* 부모 요소 높이에 맞게 이미지 크기 조정 */
+  }
+  
+  .bg_full_2 img {
+    position: relative;
+    width: 100%;  /* 부모 요소 너비에 맞게 이미지 크기 조정 */
+    height: 100%; /* 부모 요소 높이에 맞게 이미지 크기 조정 */
+  }
+  
+  .bg_full_3 img {
+    position: relative;
+    width: 100%;  /* 부모 요소 너비에 맞게 이미지 크기 조정 */
+    height: 100%; /* 부모 요소 높이에 맞게 이미지 크기 조정 */
+  }
+  
+  .s15_bg_full_2 img {
+    position: relative;
+    width: 100%;  /* 부모 요소 너비에 맞게 이미지 크기 조정 */
+    height: 100%; /* 부모 요소 높이에 맞게 이미지 크기 조정 */
+  }
+  
+  .s15_bg_full_3 img {
+    position: relative;
+    width: 100%;  /* 부모 요소 너비에 맞게 이미지 크기 조정 */
+    height: 100%; /* 부모 요소 높이에 맞게 이미지 크기 조정 */
   }
   
 

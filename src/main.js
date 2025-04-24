@@ -458,7 +458,7 @@ const left_01 = gsap.timeline();
 left_01.from(".left1", { x: -50, opacity: 0 });
 
 ScrollTrigger.create({
-  trigger: ".section10",
+  trigger: ".bg_full_1",
   start: "top center", // 스크롤 시작 위치
   end: "1000px center", // 끝 위치
   // markers:true,
@@ -472,9 +472,9 @@ const right_01 = gsap.timeline();
 right_01.from(".right1", { x: 50, opacity: 0 });
 
 ScrollTrigger.create({
-  trigger: ".section10",
-  start: "1000px center", // 스크롤 시작 위치
-  end: "1800px center", // 끝 위치
+  trigger: ".bg_full_2",
+  start: "-100 center", // 스크롤 시작 위치
+  end: "300px center", // 끝 위치
   // markers:true,
   animation: right_01,
   scrub: 3,
@@ -486,9 +486,9 @@ const left_02 = gsap.timeline();
 left_02.from(".left2", { x: -50, opacity: 0 });
 
 ScrollTrigger.create({
-  trigger: ".section10",
-  start: "1800px center", // 스크롤 시작 위치
-  end: "2400px center", // 끝 위치
+  trigger: ".bg_full_3",
+  start: "-400 center", // 스크롤 시작 위치
+  end: "top center", // 끝 위치
   // markers:true,
   animation: left_02,
   scrub: 3,
@@ -500,9 +500,9 @@ const right_02 = gsap.timeline();
 right_02.from(".right2", { x: 50, opacity: 0 });
 
 ScrollTrigger.create({
-  trigger: ".section10",
-  start: "2600px center", // 스크롤 시작 위치
-  end: "2800px center", // 끝 위치
+  trigger: ".bg_full_3",
+  start: "400px center", // 스크롤 시작 위치
+  end: "800px center", // 끝 위치
   // markers:true,
   animation: right_02,
   scrub: 3,
@@ -619,12 +619,12 @@ const section13_text = gsap.timeline();
 section13_text.from(".section13_text", { stagger: 0.1, x: 40, opacity: 0 });
 
 ScrollTrigger.create({
-  trigger: ".section13",
-  start: "1000px top", // 스크롤 시작 위치
-  end: "1200px top", // 끝 위치
+  trigger: ".section13_text",
+  start: "-200 center", // 스크롤 시작 위치
+  end: "100px center", // 끝 위치
   // markers:true,
   animation: section13_text,
-  scrub: 8,
+  scrub: 3,
 });
 
 
@@ -668,9 +668,9 @@ ScrollTrigger.create({
 
 // 이미지 오른쪽에서 밀어서 나오는 구동
 ScrollTrigger.create({
-  trigger: ".section15",
-  start: "900px top",
-  end: "1300px center",
+  trigger: ".s15_bg_full_2",
+  start: "top center",
+  end: "100px center",
   // markers:true,
   animation: gsap.to(".section15_number12", {
     clipPath: "inset(0 0 0 0)", // 오른쪽에서부터 100%가 0%로 변하면서 나타나도록 설정
@@ -682,9 +682,9 @@ ScrollTrigger.create({
 
 // 이미지 오른쪽에서 밀어서 나오는 구동
 ScrollTrigger.create({
-  trigger: ".section15",
-  start: "1700px top",
-  end: "2100px center",
+  trigger: ".s15_bg_full_3",
+  start: "-300px center",
+  end: "top center",
   // markers:true,
   animation: gsap.to(".section15_number345", {
     clipPath: "inset(0 0 0 0)", // 오른쪽에서부터 100%가 0%로 변하면서 나타나도록 설정
