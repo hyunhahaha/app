@@ -413,40 +413,67 @@ ScrollTrigger.create({
 
 
 //연달아 올라오는 5줄 1
+let startValue;
+let endValue;
+
+if (window.innerWidth >= 1600) {
+  // 예: 32인치 모니터
+  startValue = "400px center";
+} else if (window.innerWidth >= 1512) {
+  // 예: 맥북 14인치
+  startValue = "330px center";
+}
+
 ScrollTrigger.create({
   trigger: ".section09",
-  start: "300px center",
-  end: "600px center",
-  // markers:true,
+  start: startValue,
+  end: "1000px center",
+  // markers: true,
   animation: gsap.from(".ani_1", { y: 30, opacity: 0, stagger: 0.1 }),
-  // pinSpacing:false,
-  // pin: true,
   scrub: true,
 });
 
 
 //연달아 올라오는 5줄 2
+
+if (window.innerWidth >= 1600) {
+  // 32인치 모니터 등 대형 디스플레이
+  startValue = "1300px center";
+  endValue = "1900px center";
+} else if (window.innerWidth >= 1512) {
+  // 맥북 14인치 등 중형 노트북
+  startValue = "500px center";
+  endValue = "1200px center";
+}
+
 ScrollTrigger.create({
   trigger: ".section09",
-  start: "1000px center",
-  end: "1400px center",
-  // markers:true,
+  start: startValue,
+  end: endValue,
+  // markers: true,
   animation: gsap.from(".ani_2", { y: 30, opacity: 0, stagger: 0.1 }),
-  // pinSpacing:false,
-  // pin: true,
   scrub: true,
 });
 
 
 //연달아 올라오는 5줄 3
+
+if (window.innerWidth >= 1600) {
+  // 32인치 모니터
+  startValue = "1400px center";
+  endValue = "2000px center";
+} else if (window.innerWidth >= 1512) {
+  // 맥북 14인치
+  startValue = "700px center";
+  endValue = "1400px center";
+}
+
 ScrollTrigger.create({
   trigger: ".section09",
-  start: "1100px center",
-  end: "1500px center",
-  // markers:true,
+  start: startValue,
+  end: endValue,
+  // markers: true,
   animation: gsap.from(".ani_3", { y: 30, opacity: 0, stagger: 0.1 }),
-  // pinSpacing:false,
-  // pin: true,
   scrub: true,
 });
 
